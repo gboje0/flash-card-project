@@ -1,7 +1,5 @@
 from tkinter import *
-import math
 
-import pandas
 import pandas as pd
 import random
 
@@ -36,7 +34,6 @@ def flip_card():
     screen_image.itemconfig(translate_word, text=current_card["English"], fill="white")
     screen_image.itemconfig(timer_text, fill="white")
     screen_image.itemconfig(default_card, image=card_back)
-
 
 
 def is_known():
