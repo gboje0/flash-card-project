@@ -25,6 +25,7 @@ def next_card():
     screen_image.itemconfig(translate_title, text="french", fill="black")
     screen_image.itemconfig(translate_word, text=selected_word, fill="black")
     screen_image.itemconfig(default_card, image=card_front)
+    screen_image.itemconfig(timer_text, fill="black")
     flip_timer = screen.after(10000, func=flip_card)
     countdown(10)
 
